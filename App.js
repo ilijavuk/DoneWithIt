@@ -1,37 +1,31 @@
-import { StatusBar } from "expo-status-bar";
-import {
-  Image,
-  SafeAreaView,
-  StyleSheet,
-  Text,
-  TouchableHighlight,
-  TouchableOpacity,
-  TouchableOpacityComponent,
-  TouchableWithoutFeedback,
-  View,
-} from "react-native";
+import { Alert, Button, SafeAreaView, StyleSheet } from "react-native";
 
 export default function App() {
-  let x = 1;
   console.log("app executed");
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Hello World!</Text>
-      <Image source={require("./assets/favicon.png")} />
-      <TouchableHighlight
-        onPress={() => console.log("Image tapped")}
-        onLongPress={() => console.log("Image long pressed")}
-      >
-        <Image
-          source={{
-            width: 200,
-            height: 300,
-            uri: "https://picsum.photos/200/300",
-          }}
-        />
-      </TouchableHighlight>
-      <StatusBar style="auto" />
+      <Button
+        title={"Click Me"}
+        onPress={() =>
+          // Alert.alert("My title", "My message", [
+          //   {
+          //     text: "Yes",
+          //     onPress: () => console.log("Yes"),
+          //   },
+          //   {
+          //     text: "No",
+          //     onPress: () => console.log("No"),
+          //   },
+          // ])
+          Alert.prompt(
+            // iOS only
+            "My title",
+            "My message",
+            (text) => console.log("You entered: " + text),
+          )
+        }
+      />
     </SafeAreaView>
   );
 }
@@ -39,7 +33,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "lightblue",
+    backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
   },
