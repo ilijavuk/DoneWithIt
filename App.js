@@ -1,34 +1,19 @@
-import { Alert, Button, SafeAreaView, StyleSheet } from "react-native";
+import { Button, SafeAreaView, StyleSheet } from "react-native";
 
 export default function App() {
   console.log("app executed");
 
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={[styles.container, containerStyle]}>
       <Button
         title={"Click Me"}
-        onPress={() =>
-          // Alert.alert("My title", "My message", [
-          //   {
-          //     text: "Yes",
-          //     onPress: () => console.log("Yes"),
-          //   },
-          //   {
-          //     text: "No",
-          //     onPress: () => console.log("No"),
-          //   },
-          // ])
-          Alert.prompt(
-            // iOS only
-            "My title",
-            "My message",
-            (text) => console.log("You entered: " + text),
-          )
-        }
+        onPress={() => console.log("Button clicked")}
       />
     </SafeAreaView>
   );
 }
+
+const containerStyle = { backgroundColor: "orange" };
 
 const styles = StyleSheet.create({
   container: {
