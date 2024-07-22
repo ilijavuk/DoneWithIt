@@ -33,3 +33,10 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# IDE
+/.idea
+/.awcache
+/.vscode
+/.devcontainer
+*.code-workspace
