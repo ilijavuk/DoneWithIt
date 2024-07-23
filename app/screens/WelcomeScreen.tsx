@@ -1,13 +1,14 @@
 import { Image, ImageBackground, StyleSheet, Text, View } from "react-native";
-import colors from "../config/colors";
+import Button from "../components/Button";
 
 export default function WelcomeScreen() {
   return (
     <ImageBackground
       style={styles.background}
       source={require("../assets/background.jpg")}
+      blurRadius={10}
     >
-      <View style={styles.logo}>
+      <View style={styles.logoWrapper}>
         <Image
           source={{
             width: 100,
@@ -17,19 +18,17 @@ export default function WelcomeScreen() {
         />
         <Text>Sell what you don't need</Text>
       </View>
-      <View>
-        <View style={styles.loginButton}></View>
-        <View style={styles.registerButton}></View>
-        {/*<Button*/}
-        {/*  title="Login"*/}
-        {/*  onPress={() => console.log("Login")}*/}
-        {/*  color="primary"*/}
-        {/*/>*/}
-        {/*<Button*/}
-        {/*  title="Register"*/}
-        {/*  onPress={() => console.log("Register")}*/}
-        {/*  color="secondary"*/}
-        {/*/>*/}
+      <View style={styles.buttonWrapper}>
+        <Button
+          text="Login"
+          onPress={() => console.log("Login")}
+          color="primary"
+        />
+        <Button
+          text="Register"
+          onPress={() => console.log("Register")}
+          color="secondary"
+        />
       </View>
     </ImageBackground>
   );
@@ -39,20 +38,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "space-between",
   },
-  logo: {
+  logoWrapper: {
     paddingTop: 70,
     alignItems: "center",
     width: "100%",
     aspectRatio: 1,
   },
-  loginButton: {
-    width: "100%",
-    height: 70,
-    backgroundColor: colors.primary,
-  },
-  registerButton: {
-    width: "100%",
-    height: 70,
-    backgroundColor: colors.secondary,
+  buttonWrapper: {
+    gap: 15,
+    padding: 20,
   },
 });
