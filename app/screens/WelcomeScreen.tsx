@@ -1,5 +1,6 @@
 import { Image, ImageBackground, StyleSheet, Text, View } from "react-native";
 import Button from "../components/Button";
+import colors from "../config/colors";
 
 export default function WelcomeScreen() {
   return (
@@ -9,14 +10,8 @@ export default function WelcomeScreen() {
       blurRadius={10}
     >
       <View style={styles.logoWrapper}>
-        <Image
-          source={{
-            width: 100,
-            height: 100,
-            uri: require("../assets/logo-red.png"),
-          }}
-        />
-        <Text>Sell what you don't need</Text>
+        <Image style={styles.logo} source={require("../assets/logo-red.png")} />
+        <Text style={styles.tagline}>Sell what you don't need</Text>
       </View>
       <View style={styles.buttonWrapper}>
         <Button
@@ -43,6 +38,16 @@ const styles = StyleSheet.create({
     alignItems: "center",
     width: "100%",
     aspectRatio: 1,
+  },
+  logo: {
+    height: 100,
+    width: 100,
+  },
+  tagline: {
+    color: colors.black,
+    fontSize: 25,
+    fontWeight: "600",
+    marginTop: 20,
   },
   buttonWrapper: {
     gap: 15,

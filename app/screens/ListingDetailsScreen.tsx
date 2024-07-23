@@ -1,57 +1,41 @@
 import React from "react";
-import Card from "../components/Card";
-import { Image, Platform, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
+import colors from "../config/colors";
+import ListItem from "../components/ListItem/ListItem";
 
 const ListingDetailsScreen = ({}) => {
   return (
     <View style={styles.container}>
-      <Card
-        title="Red jacket for sale!"
-        subtitle="$100"
-        image={require("../assets/jacket.jpg")}
-      />
-      <View style={styles.avatarWrapper}>
-        <Image
-          style={styles.avatarImage}
-          source={require("../assets/mosh.jpg")}
-          resizeMode="contain"
-        />
-        <View style={styles.avatarInfo}>
-          <Text style={styles.avatarName}>Mosh Hamedani</Text>
-          <Text style={styles.numberOfListings}>5 Listings</Text>
-        </View>
+      <Image style={styles.image} source={require("../assets/jacket.jpg")} />
+      <View style={styles.body}>
+        <Text style={styles.title}>Red jacket for sale</Text>
+        <Text style={styles.subtitle}>$100</Text>
       </View>
+      <ListItem
+        image={require("../assets/mosh.jpg")}
+        title="Mosh Hamedani"
+        subtitle="5 Listings"
+      />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: "#f8f4f4",
+  container: {},
+  image: {
+    width: "100%",
+    height: 300,
   },
-  avatarWrapper: {
-    backgroundColor: "#fff",
-    flexDirection: "row",
-    padding: 20,
+  body: {
+    paddingHorizontal: 20,
+    paddingTop: 20,
   },
-  avatarImage: {
-    width: 70,
-    height: 70,
-    borderRadius: 35,
+  title: {
+    marginBottom: 7,
   },
-  avatarInfo: {
-    marginLeft: 10,
-    justifyContent: "flex-start",
-  },
-  avatarName: {
-    fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir",
-    fontSize: 18,
-    fontWeight: "500",
-  },
-  numberOfListings: {
-    fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir",
-    fontWeight: "500",
-    color: "gray",
+  subtitle: {
+    color: colors.secondary,
+    fontWeight: "bold",
   },
 });
 
