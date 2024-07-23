@@ -1,11 +1,6 @@
 import React from "react";
-import { SafeAreaView } from "react-native";
-import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
+import ViewImageScreen from "./app/screens/ViewImageScreen";
 
 export default function App() {
-  return (
-    <SafeAreaView style={{ backgroundColor: "#f8f4f4" }}>
-      <ListingDetailsScreen />
-    </SafeAreaView>
-  );
+  return <ViewImageScreen />;
 }
