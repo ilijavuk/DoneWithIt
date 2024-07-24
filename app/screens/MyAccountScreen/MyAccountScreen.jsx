@@ -48,7 +48,7 @@ const MyAccountScreen = () => {
         />
       </View>
       <ListItem
-        ImageComponent={<Icon name="logout" backgroundColor={colors.yellow} />}
+        IconComponent={<Icon name="logout" backgroundColor={colors.yellow} />}
         title="Log Out"
       />
     </Screen>
