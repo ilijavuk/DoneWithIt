@@ -1,4 +1,4 @@
-import { Platform, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 import colors from "app/config/colors";
 
 const appTextInputStyles = StyleSheet.create({
@@ -11,11 +11,6 @@ const appTextInputStyles = StyleSheet.create({
   },
   icon: {
     marginRight: 10,
-  },
-  textInput: {
-    fontSize: 18,
-    fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir",
-    color: colors.dark,
   },
 });
 
