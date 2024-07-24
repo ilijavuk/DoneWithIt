@@ -3,9 +3,9 @@ import colors from "../../config/colors";
 
 const listItemStyles = StyleSheet.create({
   listItem: {
-    backgroundColor: colors.white,
+    backgroundColor: colors.red,
     flexDirection: "row",
-    padding: 20,
+    padding: 15,
   },
   avatarImage: {
     width: 70,

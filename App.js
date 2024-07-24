@@ -1,6 +1,11 @@
 import React from "react";
-import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
+import MessagesScreen from "./app/screens/MessagesScreen";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 export default function App() {
-  return <ListingDetailsScreen />;
+  return (
+    <GestureHandlerRootView>
+      <MessagesScreen />
+    </GestureHandlerRootView>
+  );
 }
