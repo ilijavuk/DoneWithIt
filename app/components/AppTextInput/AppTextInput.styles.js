@@ -7,11 +7,13 @@ const appTextInputStyles = StyleSheet.create({
     borderRadius: 25,
     flexDirection: "row",
     padding: 15,
-    marginVertical: 10,
     alignItems: "center",
   },
   icon: {
     marginRight: 10,
+  },
+  input: {
+    flex: 1,
   },
 });
 
