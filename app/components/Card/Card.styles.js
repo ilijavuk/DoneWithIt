@@ -10,16 +10,19 @@ const cardStyles = StyleSheet.create({
   image: {
     width: "100%",
     height: 200,
+    backgroundColor: colors.light,
   },
   body: {
     padding: 20,
   },
   title: {
     marginBottom: 7,
+    fontSize: 17,
   },
   subtitle: {
     color: colors.secondary,
     fontWeight: "bold",
+    fontSize: 15,
   },
 });
 

@@ -6,6 +6,7 @@ import { Swipeable } from "react-native-gesture-handler";
 
 const ListItem = ({
   image,
+  IconComponent,
   title,
   subtitle,
   onPress,
@@ -13,16 +14,21 @@ const ListItem = ({
 }) => {
   return (
     <Swipeable renderRightActions={renderRightActions}>
-      <TouchableHighlight underlayColor={colors.light} onPress={() => onPress}>
+      <TouchableHighlight underlayColor={colors.light} onPress={onPress}>
         <View style={listItemStyles.listItem}>
-          <Image
-            style={listItemStyles.avatarImage}
-            source={image}
-            resizeMode="contain"
-          />
+          {IconComponent}
+          {image && (
+            <Image
+              style={listItemStyles.avatarImage}
+              source={image}
+              resizeMode="contain"
+            />
+          )}
           <View style={listItemStyles.listItemInfo}>
             <Text style={listItemStyles.title}>{title}</Text>
-            <Text style={listItemStyles.subtitle}>{subtitle}</Text>
+            {subtitle && (
+              <Text style={listItemStyles.subtitle}>{subtitle}</Text>
+            )}
           </View>
         </View>
       </TouchableHighlight>
