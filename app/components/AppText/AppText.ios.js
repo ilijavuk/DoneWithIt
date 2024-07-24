@@ -1,13 +1,6 @@
-import { StyleSheet, Text } from "react-native";
+import { Text } from "react-native";
+import defaultStyles from "app/config/styles";
 
-export default function AppText({ children }) {
-  return <Text style={styles.text}>{children}</Text>;
+export default function AppText({ style, children }) {
+  return <Text style={[defaultStyles.text, style]}>{children}</Text>;
 }
-
-const styles = StyleSheet.create({
-  text: {
-    color: "tomato",
-    fontSize: 20,
-    fontFamily: "Avenir",
-  },
-});

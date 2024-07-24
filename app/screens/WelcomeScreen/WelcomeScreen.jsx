@@ -1,6 +1,7 @@
 import { Image, ImageBackground, Text, View } from "react-native";
 import Button from "app/components/Button";
 import welcomeScreenStyles from "./WelcomeScreen.styles";
+import colors from "app/config/colors";
 
 export default function WelcomeScreen() {
   return (
@@ -22,12 +23,12 @@ export default function WelcomeScreen() {
         <Button
           text="Login"
           onPress={() => console.log("Login")}
-          color="primary"
+          color={colors.primary}
         />
         <Button
           text="Register"
           onPress={() => console.log("Register")}
-          color="secondary"
+          color={colors.secondary}
         />
       </View>
     </ImageBackground>

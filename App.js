@@ -1,25 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { SafeAreaView } from "react-native";
+import AppPicker from "app/components/AppPicker";
 import AppTextInput from "app/components/AppTextInput";
 
-export default function App() {
-  const [firstName, setFirstName] = useState("");
+const categories = [
+  { label: "Furniture", value: 1 },
+  { label: "Clothing", value: 2 },
+  { label: "Cameras", value: 3 },
+];
 
-  useEffect(() => {
-    console.log(firstName);
-  }, [firstName]);
+export default function App() {
+  const [selectedCategory, setSelectedCategory] = useState("");
 
   return (
     <GestureHandlerRootView>
       <SafeAreaView>
-        <AppTextInput
-          icon="email"
-          inputProps={{
-            placeholder: "This is a placeholder",
-            onChangeText: setFirstName,
-          }}
+        <AppPicker
+          items={categories}
+          onSelectItem={(item) => setSelectedCategory(item)}
+          placeholder="Category"
+          value={selectedCategory.label}
+          icon="apps"
         />
+        <AppTextInput inputProps={{ placeholder: "Email" }} icon="apps" />
       </SafeAreaView>
     </GestureHandlerRootView>
   );

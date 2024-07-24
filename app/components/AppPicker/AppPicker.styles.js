@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 import colors from "app/config/colors";
 
-const appTextInputStyles = StyleSheet.create({
+const appPickerStyles = StyleSheet.create({
   container: {
     backgroundColor: colors.light,
     borderRadius: 25,
@@ -13,6 +13,9 @@ const appTextInputStyles = StyleSheet.create({
   icon: {
     marginRight: 10,
   },
+  text: {
+    flex: 1,
+  },
 });
 
-export default appTextInputStyles;
+export default appPickerStyles;
