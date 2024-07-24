@@ -10,13 +10,13 @@ const rawMessages = [
     id: 1,
     title: "T1",
     description: "D1",
-    image: require("../assets/mosh.jpg"),
+    image: require("app/assets/mosh.jpg"),
   },
   {
     id: 2,
     title: "T2",
     description: "D2",
-    image: require("../assets/mosh.jpg"),
+    image: require("app/assets/mosh.jpg"),
   },
 ];
 
@@ -47,14 +47,16 @@ const MessagesScreen = () => {
         ItemSeparatorComponent={() => <ListItemSeparator />}
         refreshing={refreshing}
         onRefresh={() => {
+          setRefreshing(true);
           setMessages([
             {
               id: 3,
               title: "T3",
               description: "D3",
-              image: require("../assets/mosh.jpg"),
+              image: require("app/assets/mosh.jpg"),
             },
           ]);
+          setRefreshing(false);
         }}
       />
     </Screen>
