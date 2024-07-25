@@ -14,6 +14,7 @@ const appTextInputStyles = StyleSheet.create({
   },
   input: {
     flex: 1,
+    paddingTop: 0,
   },
 });
 

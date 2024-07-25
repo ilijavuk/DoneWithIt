@@ -23,7 +23,17 @@ const AppPicker = ({ icon, items, placeholder, value, onSelectItem }) => {
               style={appPickerStyles.icon}
             />
           )}
-          <AppText style={appPickerStyles.text}>{value || placeholder}</AppText>
+          <AppText
+            style={[
+              appPickerStyles.text,
+              {
+                flex: 1,
+                color: value ? colors.dark : colors.medium,
+              },
+            ]}
+          >
+            {value || placeholder}
+          </AppText>
           <MaterialCommunityIcons
             name="chevron-down"
             size={20}
