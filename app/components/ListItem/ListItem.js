@@ -3,6 +3,7 @@ import React from "react";
 import listItemStyles from "./ListItem.styles";
 import colors from "../../config/colors";
 import { Swipeable } from "react-native-gesture-handler";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 const ListItem = ({
   image,
@@ -10,6 +11,7 @@ const ListItem = ({
   title,
   subtitle,
   onPress,
+  isChevronsShown = true,
   renderRightActions = () => {},
 }) => {
   return (
@@ -25,11 +27,22 @@ const ListItem = ({
             />
           )}
           <View style={listItemStyles.listItemInfo}>
-            <Text style={listItemStyles.title}>{title}</Text>
+            <Text style={listItemStyles.title} numberOfLines={1}>
+              {title}
+            </Text>
             {subtitle && (
-              <Text style={listItemStyles.subtitle}>{subtitle}</Text>
+              <Text style={listItemStyles.subtitle} numberOfLines={1}>
+                {subtitle}
+              </Text>
             )}
           </View>
+          {isChevronsShown && (
+            <MaterialCommunityIcons
+              name="chevron-right"
+              size={25}
+              color={colors.medium}
+            />
+          )}
         </View>
       </TouchableHighlight>
     </Swipeable>

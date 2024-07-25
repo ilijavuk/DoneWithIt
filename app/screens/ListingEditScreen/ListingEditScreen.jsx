@@ -7,18 +7,29 @@ import Button from "../../components/Button";
 import colors from "../../config/colors";
 import listingEditScreenStyles from "./ListingEditScreen.styles";
 import { View } from "react-native";
+import CategoryPickerItem from "../../components/CategoryPickerItem";
 
 const validationSchema = Yup.object().shape({
-  title: Yup.string().required().min(1),
-  price: Yup.number().required().min(1).max(10000),
-  category: Yup.number().required(),
-  description: Yup.string(),
+  title: Yup.string().required().min(1).label("Title"),
+  price: Yup.number().required().min(1).max(10000).label("Price"),
+  category: Yup.number().required().label("Category"),
+  description: Yup.string().label("Description"),
 });
 
 const categories = [
-  { label: "Furniture", value: 1 },
-  { label: "Clothing", value: 2 },
-  { label: "Camera", value: 3 },
+  {
+    label: "Furniture",
+    value: 1,
+    icon: "floor-lamp",
+    backgroundColor: colors.danger,
+  },
+  {
+    label: "Clothing",
+    value: 2,
+    icon: "shoe-heel",
+    backgroundColor: colors.primary,
+  },
+  { label: "Camera", value: 3, icon: "camera", backgroundColor: colors.yellow },
 ];
 
 const ListingEditScreen = () => {
@@ -46,6 +57,10 @@ const ListingEditScreen = () => {
             items={categories}
             name="category"
             placeholder="Category"
+            numberOfColumns={3}
+            PickerItemComponent={({ item, onPress }) => (
+              <CategoryPickerItem item={item} onPress={onPress} />
+            )}
           />
           <AppFormField
             maxLength={255}

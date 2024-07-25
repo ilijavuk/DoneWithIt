@@ -5,6 +5,7 @@ const listItemStyles = StyleSheet.create({
   listItem: {
     backgroundColor: colors.white,
     flexDirection: "row",
+    alignItems: "center",
     padding: 15,
   },
   avatarImage: {
@@ -13,6 +14,7 @@ const listItemStyles = StyleSheet.create({
     borderRadius: 35,
   },
   listItemInfo: {
+    flex: 1,
     marginLeft: 10,
     justifyContent: "center",
   },
