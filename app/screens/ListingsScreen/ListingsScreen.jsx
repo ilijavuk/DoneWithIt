@@ -1,8 +1,9 @@
 import Card from "app/components/Card";
-import { FlatList, View } from "react-native";
+import { FlatList, TouchableOpacity, View } from "react-native";
 import Screen from "app/components/Screen";
 import listingsScreenStyles from "app/screens/ListingsScreen/ListingsScreen.styles";
 import colors from "app/config/colors";
+import Routes from "../../navigation/routes";
 
 const listings = [
   {
@@ -19,7 +20,7 @@ const listings = [
   },
 ];
 
-const ListingsScreen = () => {
+const ListingsScreen = ({ navigation }) => {
   return (
     <Screen backgroundColor={colors.grey}>
       <FlatList
@@ -27,11 +28,21 @@ const ListingsScreen = () => {
         data={listings}
         keyExtractor={(listing) => listing.id.toString()}
         renderItem={({ item }) => (
-          <Card
-            title={item.title}
-            subtitle={"$" + item.price}
-            image={item.images[0].url}
-          />
+          <TouchableOpacity
+            onPress={() =>
+              navigation.navigate(Routes.LISTING_DETAILS, {
+                title: item.title,
+                price: item.price,
+                image: item.images[0].url,
+              })
+            }
+          >
+            <Card
+              title={item.title}
+              subtitle={"$" + item.price}
+              image={item.images[0].url}
+            />
+          </TouchableOpacity>
         )}
         ItemSeparatorComponent={() => <View style={{ height: 20 }} />}
       />

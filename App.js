@@ -1,32 +1,17 @@
 import React from "react";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import Screen from "./app/components/Screen";
-import { Text } from "react-native";
+import { LogBox, Text } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
-import Button from "./app/components/Button";
-import colors from "./app/config/colors";
+import navigationTheme from "./app/navigation/navigationTheme";
+import AppNavigator from "./app/navigation/AppNavigator";
 
-const Tweets = ({ navigation }) => (
-  <Screen>
-    <Text>Tweets</Text>
-    <Button
-      text="View Tweets"
-      color={colors.secondary}
-      onPress={() =>
-        navigation.navigate("TweetDetails", {
-          id: 1,
-          name: "John Doe",
-        })
-      }
-    />
-  </Screen>
-);
+LogBox.ignoreLogs(["Warning: ...", "It appears"]); // Ignore log notification by message
 
-const TweetDetails = ({ route }) => (
+const Account = () => (
   <Screen>
-    <Text>Tweet Details</Text>
-    <Text>{route.params.name}</Text>
+    <Text>Account</Text>
   </Screen>
 );
 
@@ -52,8 +37,9 @@ const StackNavigator = () => (
 export default function App() {
   return (
     <GestureHandlerRootView>
-      <NavigationContainer>
-        <StackNavigator />
+      <NavigationContainer theme={navigationTheme}>
+        {/*<AuthNavigator />*/}
+        <AppNavigator />
       </NavigationContainer>
     </GestureHandlerRootView>
   );

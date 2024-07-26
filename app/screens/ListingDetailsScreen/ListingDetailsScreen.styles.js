@@ -10,6 +10,7 @@ const listingDetailsScreenStyles = StyleSheet.create({
   body: {
     paddingHorizontal: 20,
     paddingTop: 20,
+    marginBottom: 20,
   },
   title: {
     marginBottom: 7,

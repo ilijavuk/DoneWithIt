@@ -4,7 +4,6 @@ import ListItemSeparator from "app/components/ListItemSeparator";
 import ListItemDeleteAction from "app/components/ListItemDeleteAction";
 import { useState } from "react";
 import Screen from "app/components/Screen";
-import colors from "../../config/colors";
 
 const rawMessages = [
   {
@@ -38,7 +37,7 @@ const MessagesScreen = () => {
   };
 
   return (
-    <Screen backgroundColor={colors.danger}>
+    <Screen>
       <FlatList
         data={messages}
         keyExtractor={(message) => message.id.toString()}

@@ -2,8 +2,9 @@ import { Image, ImageBackground, Text, View } from "react-native";
 import Button from "app/components/Button";
 import welcomeScreenStyles from "./WelcomeScreen.styles";
 import colors from "app/config/colors";
+import Routes from "../../navigation/routes";
 
-export default function WelcomeScreen() {
+export default function WelcomeScreen({ navigation }) {
   return (
     <ImageBackground
       style={welcomeScreenStyles.background}
@@ -22,12 +23,12 @@ export default function WelcomeScreen() {
       <View style={welcomeScreenStyles.buttonWrapper}>
         <Button
           text="Login"
-          onPress={() => console.log("Login")}
+          onPress={() => navigation.navigate(Routes.LOGIN)}
           color={colors.primary}
         />
         <Button
           text="Register"
-          onPress={() => console.log("Register")}
+          onPress={() => navigation.navigate(Routes.REGISTER)}
           color={colors.secondary}
         />
       </View>

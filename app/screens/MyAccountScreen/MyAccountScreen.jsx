@@ -4,8 +4,9 @@ import colors from "app/config/colors";
 import { FlatList, View } from "react-native";
 import myAccountScreenStyles from "app/screens/MyAccountScreen/MyAccountScreen.styles";
 import Icon from "app/components/Icon/Icon";
+import Routes from "../../navigation/routes";
 
-const menuitems = [
+const menuItems = [
   {
     title: "My Listings",
     icon: {
@@ -19,10 +20,11 @@ const menuitems = [
       name: "email",
       backgroundColor: colors.secondary,
     },
+    targetScreen: Routes.MESSAGES,
   },
 ];
 
-const MyAccountScreen = () => {
+const MyAccountScreen = ({ navigation }) => {
   return (
     <Screen backgroundColor={colors.grey}>
       <ListItem
@@ -32,7 +34,7 @@ const MyAccountScreen = () => {
       />
       <View style={myAccountScreenStyles.actionsContainer}>
         <FlatList
-          data={menuitems}
+          data={menuItems}
           renderItem={({ item }) => (
             <ListItem
               IconComponent={
@@ -42,6 +44,7 @@ const MyAccountScreen = () => {
                 />
               }
               title={item.title}
+              onPress={() => navigation.navigate(item.targetScreen)}
             />
           )}
           keyExtractor={(menuItem) => menuItem.title}
