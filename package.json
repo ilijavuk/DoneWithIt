@@ -26,7 +26,8 @@
     "react-native": "0.74.3",
     "react-native-gesture-handler": "~2.16.1",
     "typescript": "~5.3.3",
-    "yup": "^0.28.5"
+    "yup": "^0.28.5",
+    "expo-location": "~17.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

@@ -12,7 +12,10 @@ const ImageInput = ({ imageUri, onChangeImage }) => {
     if (!libraryPermission) await requestLibraryPermission();
 
     try {
-      const result = await ImagePicker.launchImageLibraryAsync();
+      const result = await ImagePicker.launchImageLibraryAsync({
+        mediaTypes: ImagePicker.MediaTypeOptions.Images,
+        quality: 0.5,
+      });
       if (!result.canceled) onChangeImage(result.assets[0].uri);
     } catch (error) {
       console.log("Error reading an image", error);
@@ -22,7 +25,7 @@ const ImageInput = ({ imageUri, onChangeImage }) => {
   return (
     <View style={imageInputStyles.container}>
       {imageUri ? (
-        <Image source={{ uri: imageUri, width: 100, height: 100 }} />
+        <Image source={{ uri: imageUri, height: 100, width: 100 }} />
       ) : (
         <TouchableOpacity
           style={imageInputStyles.addImage}

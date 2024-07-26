@@ -12,8 +12,7 @@ const AppFormPicker = ({
   PickerItemComponent,
   ...otherProps
 }) => {
-  const { values, setFieldValue, errors, setFieldTouched, touched } =
-    useFormikContext();
+  const { values, setFieldValue, errors, touched } = useFormikContext();
 
   return (
     <View style={appFormPickerStyles.container}>
@@ -24,7 +23,6 @@ const AppFormPicker = ({
         value={values[name]}
         onSelectItem={(item) => {
           setFieldValue(name, item.value);
-          setFieldTouched(name);
         }}
         PickerItemComponent={PickerItemComponent}
         {...otherProps}

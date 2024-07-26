@@ -1,19 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
-import Screen from "./app/components/Screen";
-import colors from "./app/config/colors";
-import ImageInput from "./app/components/ImageInput";
+import ListingEditScreen from "./app/screens/ListingEditScreen";
 
 export default function App() {
-  const [imageUri, setImageUri] = useState("");
   return (
     <GestureHandlerRootView>
-      <Screen backgroundColor={colors.white}>
-        <ImageInput
-          imageUri={imageUri}
-          onChangeImage={(newImageUri) => setImageUri(newImageUri)}
-        />
-      </Screen>
+      <ListingEditScreen />
     </GestureHandlerRootView>
   );
 }
