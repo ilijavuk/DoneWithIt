@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="767b333d-e87b-400b-b621-243fd45c0a2a" name="Changes" comment="Added Navigators, hooked up navigation">
+      <change afterPath="$PROJECT_DIR$/.idea/Frontend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/listings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/animations/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/animations/loader.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/ActivityIndicator/ActivityIndicator.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/ActivityIndicator/ActivityIndicator.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/ActivityIndicator/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/hooks/useApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Card/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Card/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/ListingDetailsScreen/ListingDetailsScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/ListingDetailsScreen/ListingDetailsScreen.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/ListingsScreen/ListingsScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/ListingsScreen/ListingsScreen.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="tutorial-part-1" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ilijavuk&quot;
+  }
+}</component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1721907493" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="tutorial-part-1" />
+                    <option name="lastUsedInstant" value="1721907034" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="backup" />
+                    <option name="lastUsedInstant" value="1721906903" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ilijavuk/DoneWithIt.git&quot;,
+    &quot;accountId&quot;: &quot;c04eefea-0290-47d1-8e31-70cea7513922&quot;
+  }
+}</component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2jPggQ0WJJ3NATFjyX56S6TkG2A" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;React Native.Unnamed.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ilijavuk/Documents/Projects/Private/DoneWithIt/DoneWithIt - Frontend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/ilijavuk/Documents/Projects/Private/DoneWithIt/DoneWithIt - Frontend/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/ilijavuk/Documents/Projects/Private/DoneWithIt/DoneWithIt - Frontend/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/animations" />
+      <recent name="$PROJECT_DIR$/app/assets" />
+      <recent name="$PROJECT_DIR$/app/components/AppText" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/screens" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="ReactNative" factoryName="React Native" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <react-native value="$PROJECT_DIR$/node_modules/react-native" />
+      <platform value="IOS" />
+      <envs />
+      <only-packager />
+      <browser value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <method v="2">
+        <option name="ReactNativePackager" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="767b333d-e87b-400b-b621-243fd45c0a2a" name="Changes" comment="" />
+      <created>1721294237263</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721294237263</updated>
+      <workItem from="1721294238323" duration="10466000" />
+      <workItem from="1721628406130" duration="62000" />
+      <workItem from="1721628474355" duration="6755000" />
+      <workItem from="1721662736586" duration="11551000" />
+      <workItem from="1721888195725" duration="29335000" />
+      <workItem from="1722176296992" duration="610000" />
+      <workItem from="1722237753016" duration="5030000" />
+      <workItem from="1722269198408" duration="1891000" />
+      <workItem from="1722325148622" duration="272000" />
+    </task>
+    <task id="LOCAL-00001" summary="SafeAreaView, Images, Touchables">
+      <option name="closed" value="true" />
+      <created>1721630120868</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721630120868</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Alert API">
+      <option name="closed" value="true" />
+      <created>1721630608257</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721630608257</updated>
+    </task>
+    <task id="LOCAL-00003" summary="StyleSheet API">
+      <option name="closed" value="true" />
+      <created>1721630907962</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721630907962</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Platform specific code - fixing SafeAreaView for android">
+      <option name="closed" value="true" />
+      <created>1721631050683</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721631050683</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Dimensions and detecting orientation">
+      <option name="closed" value="true" />
+      <created>1721632122862</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721632122862</updated>
+    </task>
+    <task id="LOCAL-00006" summary="WelcomeScreen and ViewImageScreen">
+      <option name="closed" value="true" />
+      <created>1721666957336</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721666957336</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Styles">
+      <option name="closed" value="true" />
+      <created>1721716090967</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721716090967</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Button Component">
+      <option name="closed" value="true" />
+      <created>1721717080383</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1721717080383</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ListingDetailsScreen">
+      <option name="closed" value="true" />
+      <created>1721717993393</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1721717993393</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ViewImageScreen - add icons">
+      <option name="closed" value="true" />
+      <created>1721718399710</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1721718399710</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Finished Styles section">
+      <option name="closed" value="true" />
+      <created>1721722325098</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1721722325098</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added RegisterScreen">
+      <option name="closed" value="true" />
+      <created>1721888746076</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1721888746076</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added ListingEditScreen, AppFormPicker">
+      <option name="closed" value="true" />
+      <created>1721890571841</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1721890571841</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added CategoryPickerItem, improvements to MessagesScreen, ListingEditScreen, AppPicker, ListItem">
+      <option name="closed" value="true" />
+      <created>1721901270963</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1721901270963</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add photo from library and render it">
+      <option name="closed" value="true" />
+      <created>1721905027644</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1721905027644</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added simple ImageInput">
+      <option name="closed" value="true" />
+      <created>1721906620150</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1721906620150</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added ImageInputList, permission to Location API">
+      <option name="closed" value="true" />
+      <created>1721990217701</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1721990217701</updated>
+    </task>
+    <task id="LOCAL-00018" summary="StackNavigator">
+      <option name="closed" value="true" />
+      <created>1721993333689</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1721993333689</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added Navigators, hooked up navigation">
+      <option name="closed" value="true" />
+      <created>1722067308593</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1722067308593</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Created a new Expo app" />
+    <MESSAGE value="SafeAreaView, Images, Touchables" />
+    <MESSAGE value="Alert API" />
+    <MESSAGE value="StyleSheet API" />
+    <MESSAGE value="Platform specific code - fixing SafeAreaView for android" />
+    <MESSAGE value="Dimensions and detecting orientation" />
+    <MESSAGE value="WelcomeScreen and ViewImageScreen" />
+    <MESSAGE value="Styles" />
+    <MESSAGE value="Button Component" />
+    <MESSAGE value="ListingDetailsScreen" />
+    <MESSAGE value="ViewImageScreen - add icons" />
+    <MESSAGE value="Finished Styles section" />
+    <MESSAGE value="Added RegisterScreen" />
+    <MESSAGE value="Added ListingEditScreen, AppFormPicker" />
+    <MESSAGE value="Added CategoryPickerItem, improvements to MessagesScreen, ListingEditScreen, AppPicker, ListItem" />
+    <MESSAGE value="Add photo from library and render it" />
+    <MESSAGE value="Added simple ImageInput" />
+    <MESSAGE value="Added ImageInputList, permission to Location API" />
+    <MESSAGE value="StackNavigator" />
+    <MESSAGE value="Added Navigators, hooked up navigation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Navigators, hooked up navigation" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/screens/RegisterScreen/RegisterScreen.jsx</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

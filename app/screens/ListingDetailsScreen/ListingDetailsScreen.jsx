@@ -9,7 +9,10 @@ const ListingDetailsScreen = ({}) => {
 
   return (
     <View style={listingDetailsScreenStyles.container}>
-      <Image style={listingDetailsScreenStyles.image} source={params.image} />
+      <Image
+        style={listingDetailsScreenStyles.image}
+        source={{ uri: params.imageUrl }}
+      />
       <View style={listingDetailsScreenStyles.body}>
         <Text style={listingDetailsScreenStyles.title}>{params.title}</Text>
         <Text style={listingDetailsScreenStyles.subtitle}>${params.price}</Text>
