@@ -1,11 +1,18 @@
-import { Image, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import React from "react";
 import cardStyles from "./Card.styles";
+import { Image } from "react-native-expo-image-cache";
 
-const Card = ({ title, subtitle, imageUrl }) => {
+const Card = ({ title, subtitle, imageUrl, thumbnailUrl }) => {
   return (
     <View style={cardStyles.card}>
-      <Image source={{ uri: imageUrl }} alt={title} style={cardStyles.image} />
+      <Image
+        uri={imageUrl}
+        alt={title}
+        style={cardStyles.image}
+        preview={thumbnailUrl}
+        tint="light"
+      />
       <View style={cardStyles.body}>
         <Text style={cardStyles.title} numberOfLines={1}>
           {title}

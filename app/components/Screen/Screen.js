@@ -1,5 +1,7 @@
 import { SafeAreaView } from "react-native";
 import screenStyles from "./Screen.styles";
+import OfflineNotice from "../OfflineNotice";
+import React from "react";
 
 const Screen = ({ children, backgroundColor }) => {
   const getBackgroundColor = () => {
@@ -11,6 +13,7 @@ const Screen = ({ children, backgroundColor }) => {
     <SafeAreaView
       style={{ ...screenStyles.screen, backgroundColor: getBackgroundColor() }}
     >
+      <OfflineNotice />
       {children}
     </SafeAreaView>
   );
