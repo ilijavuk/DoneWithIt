@@ -14,7 +14,6 @@ const FormImagePicker = ({ name }) => {
         imageUris={values[name]}
         onAddImage={(uri) => {
           setFieldValue(name, [...values[name], uri]);
-          setFieldTouched(name);
         }}
         onRemoveImage={(imageIndex) => {
           setFieldValue(
