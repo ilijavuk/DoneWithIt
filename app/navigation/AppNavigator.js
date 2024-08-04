@@ -1,14 +1,22 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import colors from "../config/colors";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import ListingEditScreen from "../screens/ListingEditScreen";
 import React from "react";
-import { TouchableOpacity } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 import FeedNavigator from "./FeedNavigator";
-import MyAccountNavigator from "./MyAccountNavigator";
 import Routes from "./routes";
+import MyAccountNavigator from "./MyAccountNavigator";
+import ListingEditScreen from "../screens/ListingEditScreen";
 
 const Tab = createBottomTabNavigator();
+
+function Dummy() {
+  return (
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+      <Text>Dummy</Text>
+    </View>
+  );
+}
 
 const EditListingButton = ({ onPress }) => {
   return (
@@ -39,9 +47,15 @@ const EditListingButton = ({ onPress }) => {
 
 const AppNavigator = () => (
   <Tab.Navigator
-    tabBarOptions={{
-      activeTintColor: colors.danger,
-      inactiveTintColor: colors.medium,
+    screenOptions={{
+      tabBarActiveTintColor: colors.danger,
+      tabBarInactiveTintColor: colors.medium,
+      tabBarStyle: [
+        {
+          direction: "flex",
+        },
+        null,
+      ],
     }}
   >
     <Tab.Screen

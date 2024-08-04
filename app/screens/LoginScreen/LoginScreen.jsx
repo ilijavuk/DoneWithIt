@@ -6,6 +6,10 @@ import colors from "app/config/colors";
 import { Formik } from "formik";
 import * as Yup from "yup";
 import AppFormField from "app/components/AppFormField";
+import authApi from "../../api/auth";
+import ErrorMessage from "../../components/ErrorMessage";
+import { useState } from "react";
+import useAuth from "../../auth/useAuth";
 
 const validationSchema = Yup.object().shape({
   email: Yup.string().required().email().label("Email"),
@@ -13,6 +17,19 @@ const validationSchema = Yup.object().shape({
 });
 
 const LoginScreen = () => {
+  const [error, setError] = useState("");
+  const authContext = useAuth();
+
+  const handleSubmit = async (values) => {
+    const result = await authApi.login(values.email, values.password);
+    if (!result.ok) {
+      setError(result.data?.error);
+      return;
+    }
+    setError("");
+    authContext.login(result.data);
+  };
+
   return (
     <Screen style={loginScreenStyles.container}>
       <Image
@@ -22,9 +39,10 @@ const LoginScreen = () => {
       <Formik
         initialValues={{ email: "", password: "" }}
         validationSchema={validationSchema}
-        onSubmit={(values) => console.log(values)}
+        onSubmit={(values) => handleSubmit(values)}
       >
         <View style={loginScreenStyles.form}>
+          <ErrorMessage message={error} isVisible={error} />
           <AppFormField
             name="email"
             placeholder="Email"

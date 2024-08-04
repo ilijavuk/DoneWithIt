@@ -1,25 +1,20 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-const useApi = ({ apiCall }) => {
+const useApi = (apiCall) => {
   const [data, setData] = useState([]);
   const [error, setError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  const loadData = async () => {
+  const loadData = async (...payload) => {
     setIsLoading(true);
-    const response = await apiCall();
+    const response = await apiCall(...payload);
     setIsLoading(false);
-    if (!response.ok) return setError(true);
-
+    setError(!response.ok);
     setData(response.data);
-    return setError(false);
+    return response;
   };
 
-  useEffect(() => {
-    loadData();
-  }, []);
-
-  return { data, error, isLoading, refetch: loadData };
+  return { data, error, isLoading, fetch: loadData };
 };
 
 export default useApi;
