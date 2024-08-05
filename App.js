@@ -1,7 +1,7 @@
+import logger from "./app/utils/logger";
 import React, { useState } from "react";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
-import Screen from "./app/components/Screen";
-import { LogBox, Text } from "react-native";
+import { LogBox } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import navigationTheme from "./app/navigation/navigationTheme";
 import AuthContext from "./app/auth/context";
@@ -11,18 +11,14 @@ import AppNavigator from "./app/navigation/AppNavigator";
 import AppLoading from "expo-app-loading";
 import { navigationRef } from "./app/navigation/rootNavigation";
 
+logger.start();
+
 LogBox.ignoreLogs([
   "Warning: ...",
   "It appears",
   "expo-app",
   "expo-permissions",
 ]); // Ignore log notification by message
-
-const Account = () => (
-  <Screen>
-    <Text>Account</Text>
-  </Screen>
-);
 
 export default function App() {
   const [user, setUser] = useState();

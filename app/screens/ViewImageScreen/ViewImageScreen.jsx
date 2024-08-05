@@ -3,7 +3,9 @@ import React from "react";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import viewImageScreenStyles from "./ViewImageScreen.styles";
 
-export default function ViewImageScreen() {
+export default function ViewImageScreen({ route }) {
+  const image = route.params;
+
   return (
     <View style={viewImageScreenStyles.container}>
       <View style={viewImageScreenStyles.navbar}>
@@ -16,7 +18,7 @@ export default function ViewImageScreen() {
       </View>
       <Image
         style={viewImageScreenStyles.image}
-        source={require("app/assets/chair.jpg")}
+        source={{ uri: image.uri }}
         resizeMode="contain"
       />
     </View>

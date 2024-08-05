@@ -1,4 +1,5 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import logger from "./logger";
 
 const prefix = "cache";
 
@@ -33,7 +34,7 @@ const get = async (key) => {
 
     return item.value;
   } catch (error) {
-    console.log(error);
+    logger.log(error);
   }
 };
 
