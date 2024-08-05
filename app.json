@@ -13,35 +13,37 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.ilijavuk.DoneWithIt"
+      "bundleIdentifier": "com.ilijavuk.DoneWithIt",
+      "buildNumber": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./app/assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ilijavuk.DoneWithIt",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./app/assets/favicon.png"
     },
-    "plugins": [
-      "expo-secure-store"
-    ],
+    "plugins": ["expo-secure-store"],
     "notification": {
       "iosDisplayInForeground": true
     },
     "extra": {
       "bugsnag": {
         "apiKey": "f37f298cefb8d15375ff55922573aaf3"
+      },
+      "eas": {
+        "projectId": "e106aa31-2103-4d58-b3e0-96c571f471d3"
       }
     },
-    "hooks": {
-      "postPublish": [
-        {
-          "file": "@bugsnag/expo/hooks/post-publish.js",
-          "config": {}
-        }
-      ]
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/e106aa31-2103-4d58-b3e0-96c571f471d3"
     }
   }
 }

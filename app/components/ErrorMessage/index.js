@@ -1,3 +1,3 @@
-import ErrorMessage from "app/components/ErrorMessage/ErrorMessage";
+import ErrorMessage from "./ErrorMessage";
 
 export default ErrorMessage;

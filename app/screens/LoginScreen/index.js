@@ -1,3 +1,3 @@
-import LoginScreen from "app/screens/LoginScreen/LoginScreen";
+import LoginScreen from "./LoginScreen";
 
 export default LoginScreen;

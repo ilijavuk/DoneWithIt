@@ -4,24 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="767b333d-e87b-400b-b621-243fd45c0a2a" name="Changes" comment="Finished Notifications section">
-      <change afterPath="$PROJECT_DIR$/.expo-shared/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.expo-shared/assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/utils/logger.js" afterDir="false" />
+    <list default="true" id="767b333d-e87b-400b-b621-243fd45c0a2a" name="Changes" comment="Added error logging, asset optimisation">
+      <change afterPath="$PROJECT_DIR$/app/config/allChannelsSettings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eas.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/background.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/chair.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/couch.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/jacket.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/logo-red.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/logo-red.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/mosh.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/mosh.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/splash.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/splash.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/ViewImageScreen/ViewImageScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/ViewImageScreen/ViewImageScreen.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/AppFormField/AppFormField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AppFormField/AppFormField.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/AppFormField/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AppFormField/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/AppFormPicker/AppFormPicker.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AppFormPicker/AppFormPicker.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/AppPicker/AppPicker.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AppPicker/AppPicker.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/AppPicker/AppPicker.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AppPicker/AppPicker.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/AppPicker/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AppPicker/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/AppText/AppText.ios.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AppText/AppText.ios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/AppText/AppText.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AppText/AppText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/AppTextInput/AppTextInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AppTextInput/AppTextInput.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/AppTextInput/AppTextInput.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AppTextInput/AppTextInput.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/AppTextInput/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AppTextInput/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/ErrorMessage/ErrorMessage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ErrorMessage/ErrorMessage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/ErrorMessage/ErrorMessage.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ErrorMessage/ErrorMessage.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/ErrorMessage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ErrorMessage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Icon/Icon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Icon/Icon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/ListItemDeleteAction/ListItemDeleteAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ListItemDeleteAction/ListItemDeleteAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/PickerItem/PickerItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/PickerItem/PickerItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/PickerItem/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/PickerItem/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/ListingDetailsScreen/ListingDetailsScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/ListingDetailsScreen/ListingDetailsScreen.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/ListingsScreen/ListingsScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/ListingsScreen/ListingsScreen.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/ListingsScreen/ListingsScreen.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/ListingsScreen/ListingsScreen.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/ListingsScreen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/ListingsScreen/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/LoginScreen/LoginScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/LoginScreen/LoginScreen.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/LoginScreen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/LoginScreen/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/MessagesScreen/MessagesScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/MessagesScreen/MessagesScreen.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/MyAccountScreen/MyAccountScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/MyAccountScreen/MyAccountScreen.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/MyAccountScreen/MyAccountScreen.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/MyAccountScreen/MyAccountScreen.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/MyAccountScreen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/MyAccountScreen/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/RegisterScreen/RegisterScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/RegisterScreen/RegisterScreen.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/WelcomeScreen/WelcomeScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/WelcomeScreen/WelcomeScreen.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +191,7 @@
       <workItem from="1722612787599" duration="4808000" />
       <workItem from="1722768686050" duration="30000" />
       <workItem from="1722768724000" duration="1643000" />
-      <workItem from="1722776487732" duration="16654000" />
+      <workItem from="1722776487732" duration="18498000" />
     </task>
     <task id="LOCAL-00001" summary="SafeAreaView, Images, Touchables">
       <option name="closed" value="true" />
@@ -363,7 +385,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722859809770</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added error logging, asset optimisation">
+      <option name="closed" value="true" />
+      <created>1722866575302</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1722866575302</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,7 +427,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Created a new Expo app" />
     <MESSAGE value="SafeAreaView, Images, Touchables" />
     <MESSAGE value="Alert API" />
     <MESSAGE value="StyleSheet API" />
@@ -422,7 +451,8 @@
     <MESSAGE value="Finished Offline Support section - added caching and OfflineNotice" />
     <MESSAGE value="Finished Authentication and Authorization section - added login and register, storage, auth context" />
     <MESSAGE value="Finished Notifications section" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Notifications section" />
+    <MESSAGE value="Added error logging, asset optimisation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added error logging, asset optimisation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

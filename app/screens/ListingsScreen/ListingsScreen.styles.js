@@ -1,4 +1,4 @@
-import colors from "app/config/colors";
+import colors from "../../config/colors";
 import { StyleSheet } from "react-native";
 
 const listingsScreenStyles = StyleSheet.create({

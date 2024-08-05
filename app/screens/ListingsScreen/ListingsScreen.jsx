@@ -1,6 +1,6 @@
 import { FlatList, Text, TouchableOpacity, View } from "react-native";
-import Screen from "app/components/Screen";
-import colors from "app/config/colors";
+import Screen from "../../components/Screen";
+import colors from "../../config/colors";
 import Button from "../../components/Button";
 import ActivityIndicator from "../../components/ActivityIndicator";
 import Card from "../../components/Card";

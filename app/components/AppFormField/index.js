@@ -1,3 +1,3 @@
-import AppFormField from "app/components/AppFormField/AppFormField";
+import AppFormField from "./AppFormField";
 
 export default AppFormField;

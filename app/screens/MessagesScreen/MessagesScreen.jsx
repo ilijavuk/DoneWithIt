@@ -1,22 +1,22 @@
 import { FlatList } from "react-native";
-import ListItem from "app/components/ListItem";
-import ListItemSeparator from "app/components/ListItemSeparator";
-import ListItemDeleteAction from "app/components/ListItemDeleteAction";
+import ListItem from "../../components/ListItem";
+import ListItemSeparator from "../../components/ListItemSeparator";
+import ListItemDeleteAction from "../../components/ListItemDeleteAction";
 import { useState } from "react";
-import Screen from "app/components/Screen";
+import Screen from "../../components/Screen";
 
 const rawMessages = [
   {
     id: 1,
     title: "T1",
     description: "D1",
-    image: require("app/assets/mosh.jpg"),
+    image: require("../../assets/mosh.jpg"),
   },
   {
     id: 2,
     title: "T2",
     description: "D2",
-    image: require("app/assets/mosh.jpg"),
+    image: require("../../assets/mosh.jpg"),
   },
   {
     id: 4,
@@ -24,7 +24,7 @@ const rawMessages = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non fermentum nulla. Suspendisse potenti. Etiam viverra mattis ligula, eget tincidunt libero iaculis eget. Maecenas auctor lacus quam, eu commodo metus malesuada sed. Suspendisse nec commodo turpis. Mauris vitae diam dapibus, ultrices justo ac, mollis felis. Cras consectetur mi sit amet mattis sagittis. Sed eu nibh quam. Integer sagittis fringilla justo sit amet pulvinar. Vestibulum aliquam luctus est, sed tincidunt odio convallis id. Pellentesque placerat ut augue a euismod. Mauris nisi purus, laoreet euismod viverra ac, rutrum volutpat nunc. Quisque placerat ac odio vitae molestie",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non fermentum nulla. Suspendisse potenti. Etiam viverra mattis ligula, eget tincidunt libero iaculis eget. Maecenas auctor lacus quam, eu commodo metus malesuada sed. Suspendisse nec commodo turpis. Mauris vitae diam dapibus, ultrices justo ac, mollis felis. Cras consectetur mi sit amet mattis sagittis. Sed eu nibh quam. Integer sagittis fringilla justo sit amet pulvinar. Vestibulum aliquam luctus est, sed tincidunt odio convallis id. Pellentesque placerat ut augue a euismod. Mauris nisi purus, laoreet euismod viverra ac, rutrum volutpat nunc. Quisque placerat ac odio vitae molestie",
-    image: require("app/assets/mosh.jpg"),
+    image: require("../../assets/mosh.jpg"),
   },
 ];
 
@@ -61,7 +61,7 @@ const MessagesScreen = () => {
               id: 3,
               title: "T3",
               description: "D3",
-              image: require("app/assets/mosh.jpg"),
+              image: require("../../assets/mosh.jpg"),
             },
           ]);
           setRefreshing(false);

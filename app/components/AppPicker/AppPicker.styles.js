@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import colors from "app/config/colors";
+import colors from "../../config/colors";
 
 const appPickerStyles = StyleSheet.create({
   container: {

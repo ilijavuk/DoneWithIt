@@ -1,8 +1,8 @@
 import { TextInput, View } from "react-native";
-import appTextInputStyles from "app/components/AppTextInput/AppTextInput.styles";
+import appTextInputStyles from "../../components/AppTextInput/AppTextInput.styles";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import colors from "app/config/colors";
-import defaultStyles from "app/config/styles";
+import colors from "../../config/colors";
+import defaultStyles from "../../config/styles";
 
 const AppTextInput = ({ icon, ...inputProps }) => {
   return (

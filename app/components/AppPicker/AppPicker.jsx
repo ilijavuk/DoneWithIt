@@ -1,11 +1,11 @@
 import { FlatList, Modal, TouchableWithoutFeedback, View } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import colors from "app/config/colors";
-import AppText from "app/components/AppText";
-import appPickerStyles from "app/components/AppPicker/AppPicker.styles";
+import colors from "../../config/colors";
+import AppText from "../../components/AppText";
+import appPickerStyles from "../../components/AppPicker/AppPicker.styles";
 import { useState } from "react";
-import Button from "app/components/Button";
-import Screen from "app/components/Screen";
+import Button from "../../components/Button";
+import Screen from "../../components/Screen";
 import PickerItem from "../PickerItem";
 
 const AppPicker = ({

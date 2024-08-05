@@ -6,7 +6,7 @@ import {
   Text,
   View,
 } from "react-native";
-import ListItem from "app/components/ListItem";
+import ListItem from "../../components/ListItem";
 import listingDetailsScreenStyles from "./ListingDetailsScreen.styles";
 import { Image } from "react-native-expo-image-cache";
 import { Formik } from "formik";
@@ -61,7 +61,7 @@ const ListingDetailsScreen = ({ route }) => {
         </Text>
       </View>
       <ListItem
-        image={require("app/assets/mosh.jpg")}
+        image={require("../../assets/mosh.jpg")}
         title="Mosh Hamedani"
         subtitle="5 Listings"
         onPress={() => console.log("Message Seller")}

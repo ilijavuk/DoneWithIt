@@ -1,3 +1,3 @@
-import PickerItem from "app/components/PickerItem/PickerItem";
+import PickerItem from "./PickerItem";
 
 export default PickerItem;

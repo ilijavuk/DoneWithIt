@@ -1,7 +1,7 @@
 import { View } from "react-native";
-import appFormFieldStyles from "app/components/AppFormField/AppFormField.styles";
-import AppTextInput from "app/components/AppTextInput";
-import ErrorMessage from "app/components/ErrorMessage";
+import appFormFieldStyles from "../../components/AppFormField/AppFormField.styles";
+import AppTextInput from "../../components/AppTextInput";
+import ErrorMessage from "../../components/ErrorMessage";
 import { useFormikContext } from "formik";
 
 const AppFormField = ({ name, ...otherProps }) => {

@@ -1,9 +1,9 @@
-import Screen from "app/components/Screen";
-import ListItem from "app/components/ListItem";
-import colors from "app/config/colors";
+import Screen from "../../components/Screen";
+import ListItem from "../../components/ListItem";
+import colors from "../../config/colors";
 import { FlatList, View } from "react-native";
-import myAccountScreenStyles from "app/screens/MyAccountScreen/MyAccountScreen.styles";
-import Icon from "app/components/Icon/Icon";
+import myAccountScreenStyles from "../../screens/MyAccountScreen/MyAccountScreen.styles";
+import Icon from "../../components/Icon/Icon";
 import Routes from "../../navigation/routes";
 import useAuth from "../../auth/useAuth";
 
@@ -31,7 +31,7 @@ const MyAccountScreen = ({ navigation }) => {
   return (
     <Screen backgroundColor={colors.grey}>
       <ListItem
-        image={require("app/assets/mosh.jpg")}
+        image={require("../../assets/mosh.jpg")}
         title={authContext.user.name}
         subtitle={authContext.user.email}
       />

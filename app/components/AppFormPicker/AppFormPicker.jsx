@@ -1,6 +1,6 @@
 import { View } from "react-native";
-import appFormPickerStyles from "app/components/AppFormPicker/AppFormPicker.styles";
-import ErrorMessage from "app/components/ErrorMessage";
+import appFormPickerStyles from "../../components/AppFormPicker/AppFormPicker.styles";
+import ErrorMessage from "../../components/ErrorMessage";
 import { useFormikContext } from "formik";
 import AppPicker from "../AppPicker";
 

@@ -1,3 +1,3 @@
-import MyAccountScreen from "app/screens/MyAccountScreen/MyAccountScreen";
+import MyAccountScreen from "./MyAccountScreen";
 
 export default MyAccountScreen;

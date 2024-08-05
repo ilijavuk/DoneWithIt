@@ -1,5 +1,5 @@
 import { View } from "react-native";
-import colors from "app/config/colors";
+import colors from "../../config/colors";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 const Icon = ({

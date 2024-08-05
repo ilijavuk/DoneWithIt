@@ -1,3 +1,3 @@
-import ListingsScreen from "app/screens/ListingsScreen/ListingsScreen";
+import ListingsScreen from "./ListingsScreen";
 
 export default ListingsScreen;

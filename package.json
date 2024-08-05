@@ -8,8 +8,9 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@expo/config": "^9.0.3",
-    "@expo/metro-config": "^0.18.8",
+    "@bugsnag/expo": "^51.0.0",
+    "@expo/config": "^8.1.1",
+    "@expo/metro-config": "^0.10.0",
     "@expo/vector-icons": "^14.0.2",
     "@react-native-async-storage/async-storage": "^1.24.0",
     "@react-native-community/hooks": "^3.0.0",
@@ -22,9 +23,12 @@
     "apisauce": "^1.1.1",
     "expo": "~51.0.21",
     "expo-app-loading": "^2.1.1",
+    "expo-application": "~5.9.1",
     "expo-blur": "~13.0.2",
     "expo-constants": "~16.0.2",
+    "expo-crypto": "~13.0.2",
     "expo-device": "~6.0.2",
+    "expo-file-system": "~17.0.1",
     "expo-image-picker": "~15.0.7",
     "expo-location": "~17.0.1",
     "expo-notifications": "~0.28.14",
@@ -48,11 +52,7 @@
     "sharp": "^0.33.4",
     "sharp-cli": "^5.0.0",
     "typescript": "~5.3.3",
-    "yup": "^0.28.5",
-    "@bugsnag/expo": "^51.0.0",
-    "expo-application": "~5.9.1",
-    "expo-crypto": "~13.0.2",
-    "expo-file-system": "~17.0.1"
+    "yup": "^0.28.5"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

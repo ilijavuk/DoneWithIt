@@ -1,11 +1,11 @@
-import Screen from "app/components/Screen";
-import registerScreenStyles from "app/screens/RegisterScreen/RegisterScreen.styles";
+import Screen from "../../components/Screen";
+import registerScreenStyles from "../../screens/RegisterScreen/RegisterScreen.styles";
 import { Image, View } from "react-native";
-import Button from "app/components/Button";
-import colors from "app/config/colors";
+import Button from "../../components/Button";
+import colors from "../../config/colors";
 import { Formik } from "formik";
 import * as Yup from "yup";
-import AppFormField from "app/components/AppFormField";
+import AppFormField from "../../components/AppFormField";
 import authApi from "../../api/auth";
 import { useState } from "react";
 import ErrorMessage from "../../components/ErrorMessage";

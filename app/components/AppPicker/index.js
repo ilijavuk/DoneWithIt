@@ -1,3 +1,3 @@
-import AppPicker from "app/components/AppPicker/AppPicker";
+import AppPicker from "./AppPicker";
 
 export default AppPicker;

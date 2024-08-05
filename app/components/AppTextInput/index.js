@@ -1,3 +1,3 @@
-import AppTextInput from "app/components/AppTextInput/AppTextInput";
+import AppTextInput from "./AppTextInput";
 
 export default AppTextInput;

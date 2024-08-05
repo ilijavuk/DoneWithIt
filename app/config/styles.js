@@ -1,5 +1,5 @@
 import { Platform } from "react-native";
-import colors from "app/config/colors";
+import colors from "../config/colors";
 
 const defaultStyles = {
   colors,

@@ -1,20 +1,20 @@
 import { Image, ImageBackground, Text, View } from "react-native";
-import Button from "app/components/Button";
 import welcomeScreenStyles from "./WelcomeScreen.styles";
-import colors from "app/config/colors";
 import Routes from "../../navigation/routes";
+import Button from "../../components/Button";
+import colors from "../../config/colors";
 
 export default function WelcomeScreen({ navigation }) {
   return (
     <ImageBackground
       style={welcomeScreenStyles.background}
-      source={require("app/assets/background.jpg")}
+      source={require("../../assets/background.jpg")}
       blurRadius={10}
     >
       <View style={welcomeScreenStyles.logoWrapper}>
         <Image
           style={welcomeScreenStyles.logo}
-          source={require("app/assets/logo-red.png")}
+          source={require("../../assets/logo-red.png")}
         />
         <Text style={welcomeScreenStyles.tagline}>
           Sell what you don't need
