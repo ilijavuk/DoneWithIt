@@ -2,21 +2,13 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import colors from "../config/colors";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import React from "react";
-import { Text, TouchableOpacity, View } from "react-native";
+import { TouchableOpacity } from "react-native";
 import FeedNavigator from "./FeedNavigator";
 import Routes from "./routes";
 import MyAccountNavigator from "./MyAccountNavigator";
 import ListingEditScreen from "../screens/ListingEditScreen";
 
 const Tab = createBottomTabNavigator();
-
-function Dummy() {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Dummy</Text>
-    </View>
-  );
-}
 
 const EditListingButton = ({ onPress }) => {
   return (
@@ -45,49 +37,52 @@ const EditListingButton = ({ onPress }) => {
   );
 };
 
-const AppNavigator = () => (
-  <Tab.Navigator
-    screenOptions={{
-      tabBarActiveTintColor: colors.danger,
-      tabBarInactiveTintColor: colors.medium,
-      tabBarStyle: [
-        {
-          direction: "flex",
-        },
-        null,
-      ],
-    }}
-  >
-    <Tab.Screen
-      name={Routes.FEED}
-      component={FeedNavigator}
-      options={{
-        tabBarIcon: ({ size, color }) => (
-          <MaterialCommunityIcons name="home" size={size} color={color} />
-        ),
+const AppNavigator = () => {
+  return (
+    <Tab.Navigator
+      screenOptions={{
+        headerShown: false,
+        tabBarActiveTintColor: colors.danger,
+        tabBarInactiveTintColor: colors.medium,
+        tabBarStyle: [
+          {
+            direction: "flex",
+          },
+          null,
+        ],
       }}
-    />
-    <Tab.Screen
-      name={Routes.EDIT_LISTING}
-      component={ListingEditScreen}
-      options={({ navigation }) => ({
-        tabBarButton: () => (
-          <EditListingButton
-            onPress={() => navigation.navigate(Routes.EDIT_LISTING)}
-          />
-        ),
-      })}
-    />
-    <Tab.Screen
-      name={Routes.MY_ACCOUNT}
-      component={MyAccountNavigator}
-      options={{
-        tabBarIcon: ({ size, color }) => (
-          <MaterialCommunityIcons name="account" size={size} color={color} />
-        ),
-      }}
-    />
-  </Tab.Navigator>
-);
+    >
+      <Tab.Screen
+        name={Routes.FEED}
+        component={FeedNavigator}
+        options={{
+          tabBarIcon: ({ size, color }) => (
+            <MaterialCommunityIcons name="home" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name={Routes.EDIT_LISTING}
+        component={ListingEditScreen}
+        options={({ navigation }) => ({
+          tabBarButton: () => (
+            <EditListingButton
+              onPress={() => navigation.navigate(Routes.EDIT_LISTING)}
+            />
+          ),
+        })}
+      />
+      <Tab.Screen
+        name={Routes.MY_ACCOUNT}
+        component={MyAccountNavigator}
+        options={{
+          tabBarIcon: ({ size, color }) => (
+            <MaterialCommunityIcons name="account" size={size} color={color} />
+          ),
+        }}
+      />
+    </Tab.Navigator>
+  );
+};
 
 export default AppNavigator;

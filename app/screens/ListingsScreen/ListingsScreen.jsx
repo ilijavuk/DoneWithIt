@@ -45,6 +45,7 @@ const ListingsScreen = ({ navigation }) => {
             <TouchableOpacity
               onPress={() =>
                 navigation.navigate(Routes.LISTING_DETAILS, {
+                  id: item.id,
                   title: item.title,
                   price: item.price,
                   images: item.images,

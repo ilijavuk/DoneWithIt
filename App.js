@@ -9,8 +9,14 @@ import AuthNavigator from "./app/navigation/AuthNavigator";
 import authStorage from "./app/auth/storage";
 import AppNavigator from "./app/navigation/AppNavigator";
 import AppLoading from "expo-app-loading";
+import { navigationRef } from "./app/navigation/rootNavigation";
 
-LogBox.ignoreLogs(["Warning: ...", "It appears", "expo-app"]); // Ignore log notification by message
+LogBox.ignoreLogs([
+  "Warning: ...",
+  "It appears",
+  "expo-app",
+  "expo-permissions",
+]); // Ignore log notification by message
 
 const Account = () => (
   <Screen>
@@ -30,7 +36,7 @@ export default function App() {
   return isAppReady ? (
     <AuthContext.Provider value={{ user, setUser }}>
       <GestureHandlerRootView>
-        <NavigationContainer theme={navigationTheme}>
+        <NavigationContainer ref={navigationRef} theme={navigationTheme}>
           {user ? <AppNavigator /> : <AuthNavigator />}
         </NavigationContainer>
       </GestureHandlerRootView>

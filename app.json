@@ -12,7 +12,8 @@
       "backgroundColor": "#e63c4b"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ilijavuk.DoneWithIt"
     },
     "android": {
       "adaptiveIcon": {
@@ -23,6 +24,9 @@
     "web": {
       "favicon": "./app/assets/favicon.png"
     },
-    "plugins": ["expo-secure-store"]
+    "plugins": ["expo-secure-store"],
+    "notification": {
+      "iosDisplayInForeground": true
+    }
   }
 }

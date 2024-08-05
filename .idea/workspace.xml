@@ -4,25 +4,56 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="767b333d-e87b-400b-b621-243fd45c0a2a" name="Changes" comment="Finished Offline Support section - added caching and OfflineNotice">
-      <change afterPath="$PROJECT_DIR$/app/api/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/auth/context.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/auth/storage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/auth/useAuth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="767b333d-e87b-400b-b621-243fd45c0a2a" name="Changes" comment="Finished Authentication and Authorization section - added login and register, storage, auth context">
+      <change afterPath="$PROJECT_DIR$/app/api/expoPushTokens.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/messages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/hooks/useNotifications.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/navigation/rootNavigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/.xcode.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt.xcodeproj/xcshareddata/xcschemes/DoneWithIt.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/AppDelegate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/AppDelegate.mm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/DoneWithIt.entitlements" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Images.xcassets/AppIcon.appiconset/App-Icon-20x20@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Images.xcassets/AppIcon.appiconset/App-Icon-20x20@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Images.xcassets/AppIcon.appiconset/App-Icon-20x20@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Images.xcassets/AppIcon.appiconset/App-Icon-29x29@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Images.xcassets/AppIcon.appiconset/App-Icon-29x29@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Images.xcassets/AppIcon.appiconset/App-Icon-29x29@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Images.xcassets/AppIcon.appiconset/App-Icon-40x40@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Images.xcassets/AppIcon.appiconset/App-Icon-40x40@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Images.xcassets/AppIcon.appiconset/App-Icon-40x40@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Images.xcassets/AppIcon.appiconset/App-Icon-60x60@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Images.xcassets/AppIcon.appiconset/App-Icon-60x60@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Images.xcassets/AppIcon.appiconset/App-Icon-76x76@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Images.xcassets/AppIcon.appiconset/App-Icon-76x76@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Images.xcassets/AppIcon.appiconset/App-Icon-83.5x83.5@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Images.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Images.xcassets/AppIcon.appiconset/ItunesArtwork@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Images.xcassets/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Images.xcassets/SplashScreen.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Images.xcassets/SplashScreen.imageset/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Images.xcassets/SplashScreenBackground.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Images.xcassets/SplashScreenBackground.imageset/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/SplashScreen.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/Supporting/Expo.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/main.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/DoneWithIt/noop-file.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/Podfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/Podfile.properties.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/splash.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/splash.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/ActivityIndicator/ActivityIndicator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ActivityIndicator/ActivityIndicator.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/ActivityIndicator/ActivityIndicator.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ActivityIndicator/ActivityIndicator.styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/hooks/useApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/hooks/useApi.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/navigation/AppNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/AppNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/ListingDetailsScreen/ListingDetailsScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/ListingDetailsScreen/ListingDetailsScreen.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/ListingDetailsScreen/ListingDetailsScreen.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/ListingDetailsScreen/ListingDetailsScreen.styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/screens/ListingsScreen/ListingsScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/ListingsScreen/ListingsScreen.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/screens/LoginScreen/LoginScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/LoginScreen/LoginScreen.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/MyAccountScreen/MyAccountScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/MyAccountScreen/MyAccountScreen.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/RegisterScreen/RegisterScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/RegisterScreen/RegisterScreen.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -172,7 +203,7 @@
       <workItem from="1722612787599" duration="4808000" />
       <workItem from="1722768686050" duration="30000" />
       <workItem from="1722768724000" duration="1643000" />
-      <workItem from="1722776487732" duration="2539000" />
+      <workItem from="1722776487732" duration="13400000" />
     </task>
     <task id="LOCAL-00001" summary="SafeAreaView, Images, Touchables">
       <option name="closed" value="true" />
@@ -350,7 +381,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722410825047</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Finished Authentication and Authorization section - added login and register, storage, auth context">
+      <option name="closed" value="true" />
+      <created>1722784827381</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1722784827382</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,6 +446,7 @@
     <MESSAGE value="Added ActivityIndicator, connected Listings to API" />
     <MESSAGE value="Finished Networking section" />
     <MESSAGE value="Finished Offline Support section - added caching and OfflineNotice" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Offline Support section - added caching and OfflineNotice" />
+    <MESSAGE value="Finished Authentication and Authorization section - added login and register, storage, auth context" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Authentication and Authorization section - added login and register, storage, auth context" />
   </component>
 </project>

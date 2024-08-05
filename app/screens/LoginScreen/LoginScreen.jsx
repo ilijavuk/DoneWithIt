@@ -39,7 +39,7 @@ const LoginScreen = () => {
       <Formik
         initialValues={{ email: "", password: "" }}
         validationSchema={validationSchema}
-        onSubmit={(values) => handleSubmit(values)}
+        onSubmit={handleSubmit}
       >
         <View style={loginScreenStyles.form}>
           <ErrorMessage message={error} isVisible={error} />

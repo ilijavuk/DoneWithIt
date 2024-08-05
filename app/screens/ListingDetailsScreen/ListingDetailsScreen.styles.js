@@ -19,6 +19,10 @@ const listingDetailsScreenStyles = StyleSheet.create({
     color: colors.secondary,
     fontWeight: "bold",
   },
+  form: {
+    padding: 20,
+    gap: 20,
+  },
 });
 
 export default listingDetailsScreenStyles;
